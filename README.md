@@ -5,8 +5,8 @@ Scrip de NodeJs para enviar un archivo .CSV por correo electrónico
 
 _Antes que continúes debes tener instalado:_
 
-* [NodeJS](https://nodejs.org) - _utilicé v12.6.2_
-* [npm](https://www.npmjs.com/) - _utilicé v6.14.4_
+* [NodeJS](https://nodejs.org) - _v12.6.2 o superior_
+* [npm](https://www.npmjs.com/) - _v6.14.4 o superior_
 
 ## Instalación 🔧
 Sigue estos pasos:
