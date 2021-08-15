@@ -5,6 +5,7 @@ if(dotenv.error) throw dotenv.error
 const c = con => console.log(con)
 
 const pool = require('./database')
+const enviaEmail = require('./mail')
 
 // Obtiene usuarios de BBDD para datos del archivo
 const getUsers = async () => {
@@ -17,4 +18,5 @@ const getUsers = async () => {
 
 (async () => {
     const users = await getUsers()
+    enviaEmail(c,users)
 })()
