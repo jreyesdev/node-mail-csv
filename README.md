@@ -5,8 +5,8 @@ Scrip de NodeJs para enviar un archivo .CSV por correo electrónico
 
 _Antes que continúes debes tener instalado:_
 
-* [NodeJS](https://nodejs.org)
-* [npm](https://www.npmjs.com/)
+* [NodeJS](https://nodejs.org) - _utilicé v12.6.2_
+* [npm](https://www.npmjs.com/) - _utilicé v6.14.4_
 
 ## Instalación 🔧
 Sigue estos pasos:
@@ -16,8 +16,9 @@ Instala las dependencias con el siguiente comando
 ```sh
 npm install
 ```
+
 ### Variables de entorno
-Crea un archivo _.env_ y agrega los datos de la BBDD y el corre electrónico a utilizar
+Crea un archivo **_.env_** y agrega los datos de la BBDD y el corre electrónico a utilizar
 ```
 DB_HOST="IP de la BBDD"
 DB_PORT="Puerto"
@@ -30,7 +31,22 @@ MAIL_PASS="Tu contraseña"
 MAIL_CC="concopiacorreo@ejemplo.com"
 MAIL_TOSENT="destino@ejemplo.com"
 ```
-NOTA:
-*MAIL_CC* puede estar vacío, solo si vas a enviar copia a otro correo
-*MAIL_TOSENT* puede ser un solo correo o si enviarás a varios agregalos separados por coma ","
 
+NOTA:
+* **MAIL_CC** puede estar vacío. Agrega el correo solo si necesitas enviar copia a otro correo.
+* **MAIL_TOSENT** puede ser un solo correo o si enviarás a varios agregalos separados por coma ","
+
+## Ejecutando Script ⚙️
+Para ejecutar el script ingresa el siguiente comando:
+```
+node src/index.js
+```
+
+¡LISTO!
+
+## Paquetes 🛠️
+Los paquetes que utiliza
+* [Dotenv](https://www.npmjs.com/package/dotenv)
+* [Fast-csv](https://c2fo.github.io/fast-csv/docs/introduction/getting-started)
+* [Nodemailer](https://nodemailer.com/about/)
+* [Postgresql](https://node-postgres.com/)
