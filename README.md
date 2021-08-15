@@ -1,5 +1,5 @@
 # Enviar CSV por email
-Scrip de NodeJs para enviar un archivo .CSV por correo electrónico
+Script de NodeJs para enviar un archivo .CSV por correo electrónico
 
 ### Pre-requisitos 📋
 
